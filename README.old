@@ -1,0 +1,54 @@
+MILAD AZH
+Fall 2014
+CPS511
+Ryerson University
+mazh[at]scs.ryerson.ca
+
+Description
+===========
+- The program is tested and fully functional
+- The alternative materials are used for selected cubes
+
+Compiling
+=========
+To compile program, browse to the main directory(CityBuilder-1.6f), open a terminal window and enter the following command:
+$ make CityBuilder
+
+Instructions are specific to Unix-based environment. If you're using windows, 
+include "windows.h" to all source files, create a project in Visual Studio and import all files accordingly. 
+ 
+Running
+=======
+To run program:
+$ ./CityBuilder
+
+Or use your favorite file browser. Make sure the file is set to execute, and double-click on it to run.
+
+Transformations
+===============
+Use appropriate keys (t, s, r, h) to set transformation modes to the selected object.
+Use arrow keys to move, scale, and rotate objects.
+Use (c) to switch between cubes.
+Use (+, -) to select multiple cubes.
+
+Storing Cubes
+===============
+Use the appropriate keys (l, w) to restore and store cube objects.
+You may remove the object file "obj", without affecting the program functionality. 
+
+Use (q) to quit program without saving current state.
+
+Mouse Events(beta)
+==============
+You may move around the selected cube by pressing down the mouse button and dragging.
+Note that this functionality is inconsistent. Typically when performing this operation 
+on the same cube multiple times, leads to undefined transformation behavior.  
+
+Enable dragging boundaries by setting "enableDragBounds" to true (disabled due to occasional glitches)
+
+References
+==========
+1. "How to write objects in c++"
+<http://stackoverflow.com/questions/2376193/how-to-write-an-object-to-file-in-c>
+2. "Using gluUnProject"
+<http://nehe.gamedev.net/article/using_gluunproject/16013/>
